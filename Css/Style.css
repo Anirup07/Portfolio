@@ -36,6 +36,12 @@ body {
   overflow-x: hidden;
 }
 
+
+main {
+  opacity: 0px;
+  visibility: hidden;
+}
+
 #loader {
   height: 100vh;
   width: 100vw;
