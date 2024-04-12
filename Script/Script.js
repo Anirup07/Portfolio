@@ -101,6 +101,10 @@ document
 function gs() {
   var t1 = gsap.timeline();
 
+    t1.to(`main`, {
+    autoAlpha: 1,
+  })
+
   gsap.to(`nav`, {
     backgroundColor: `#000`,
     duration: 0.8,
