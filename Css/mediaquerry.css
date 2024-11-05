@@ -1,0 +1,300 @@
+@media (max-width: 1154px) {
+  .profile img {
+    height: auto;
+    width: 300px;
+  }
+
+  .behance {
+    position: relative;
+    z-index: 15;
+    width: 300px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #design-work img {
+    width: 300px;
+    height: 250px;
+    margin-top: -20px;
+  }
+
+  .behance a {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+  }
+
+  .project {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 950px) {
+  .profile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+  }
+
+  .profile img {
+    height: auto;
+    width: 250px;
+  }
+
+  #design-work img {
+    width: 250px;
+    height: 200px;
+    margin-top: -20px;
+  }
+
+  
+.table h2 {
+  font-size: clamp(1.125rem, 1.0446rem + 0.4018vw, 1.6875rem);
+  margin-bottom: 20px;
+  hyphens: auto;
+  text-align: center;
+  line-height: 30px;
+}
+
+.table p {
+  text-align: inter-word;
+}
+
+}
+
+@media (max-width: 770px) {
+  .profile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+  }
+
+  .texts {
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .texts p {
+    text-align: justify;
+  }
+
+  .d-img {
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+  }
+
+  .design-skills img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .dev-skills img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .dev-img {
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+  }
+
+  .aboutme {
+    width: 100%;
+    height: 1000px;
+    padding: 30px 12%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .quote {
+    margin-top: 100px;
+    margin-bottom: 120px;
+  }
+}
+
+@media (max-width: 585px) {
+  .d-img {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+  }
+
+  .design-skills img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .dev-skills img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .dev-img {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+  }
+
+  .project {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+  }
+
+  #design-work img {
+    width: 180px;
+    height: 180px;
+    margin-top: -20px;
+  }
+
+  .flexfront {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+  }
+
+  .welcome {
+    font-size: 60px;
+    line-height: 150px;
+  }
+
+  .aboutme p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 470px) {
+
+  .res-button {
+    height: 40px;
+    width: 110px;
+    border-radius: 25px;
+    font-size: 12px;
+  }
+
+  nav h2 {
+    font-size: 18px;
+  }
+  
+
+  .welcome {
+    font-size: 50px;
+    line-height: 150px;
+  }
+
+  .profile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    margin-top: 60px;
+  }
+
+  nav img {
+    height: 35px;
+    width: auto;
+  }
+
+
+  .aboutme {
+    width: 100%;
+    height: 1500px;
+    padding: 30px 12%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .d-img {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+  }
+
+  .design-skills img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .dev-skills img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .dev-img {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    gap: 10px;
+  }
+
+  .design-skills {
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .dev-skills {
+    align-items: center;
+  }
+
+  .d-img {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    gap: 10px;
+  }
+
+ .reveal-text{
+  text-align: center;
+ }
+
+ .texts p {
+  text-align: center;
+ }
+
+}
+
+@media (max-width:415px) {
+
+  .welcome {
+    font-size: 40px;
+    line-height: 110px;
+  }
+
+
+  .flexfront {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+  }
+}

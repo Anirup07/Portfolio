@@ -1,0 +1,594 @@
+@font-face {
+  font-family: "Nullshock";
+  src: url("../Font/nulshock\ bd.otf");
+}
+
+@font-face {
+  font-family: coco-r;
+  src: url("../Assets/Coco-Sharp-Regular-trial.ttf");
+}
+
+@font-face {
+  font-family: coco-b;
+  src: url("../Assets/Coco-Sharp-Regular-trial.ttf");
+}
+
+@font-face {
+  font-family: creto-r;
+  src: url("../Assets/CreatoDisplay-Regular.otf");
+}
+
+@font-face {
+  font-family: creto-m;
+  src: url("../Assets/CreatoDisplay-Medium.otf");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  position: relative;
+  overflow-x: hidden;
+}
+
+main {
+  opacity: 0px;
+  visibility: hidden;
+}
+
+#loader {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 99;
+  background-color: rgb(32, 32, 32);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(1.25rem, 1.1161rem + 0.6696vw, 2.1875rem);
+  font-weight: 900;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+}
+
+#nav {
+  width: 100vw;
+  height: 80px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 4%;
+  position: fixed;
+  color: white;
+  z-index: 999;
+  position: fixed;
+  text-decoration: none;
+}
+
+nav img {
+  height: 45px;
+  width: auto;
+}
+
+.res-button {
+  height: 50px;
+  width: 150px;
+  border-radius: 25px;
+  border: none;
+  background: rgb(7,93,23);
+  background: linear-gradient(144deg, rgba(7,93,23,1) 0%, rgba(33,134,42,1) 50%, rgba(90,201,2,1) 100%);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  z-index: 999;
+}
+
+#vid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -10;
+  opacity: 0.5;
+  object-fit: cover;
+}
+
+#vid-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  z-index: -9;
+}
+
+.hero {
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  text-align: center;
+  font-family: "Nullshock";
+  padding: 0px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.welcome {
+  font-size: clamp(3.75rem, 3.2143rem + 2.6786vw, 7.5rem);
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  line-height: 220px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  z-index: -8;
+}
+
+.profile {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 150px;
+}
+
+.profile img {
+  height: auto;
+  width: 450px;
+}
+
+.texts {
+  text-align: left;
+  overflow: hidden;
+}
+
+.texts h2 {
+  margin-bottom: 12px;
+  font-size: clamp(0.9375rem, 0.8036rem + 0.6696vw, 1.875rem);
+}
+
+.texts h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(0.8125rem, 0.7679rem + 0.2232vw, 1.125rem);
+}
+
+.texts p {
+  width: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 3px;
+  line-height: 24px;
+  margin-top: 20px;
+  font-size: clamp(0.75rem, 0.6964rem + 0.2679vw, 1.125rem);
+}
+
+.texts span {
+  color: rgb(124, 206, 1);
+}
+
+.texts .hire-btn {
+  height: 40px;
+  width: 120px;
+  border-radius: 25px;
+  background-color: rgb(112, 187, 1);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: clamp(0.75rem, 0.7232rem + 0.1339vw, 0.9375rem);
+  border: none;
+  margin-top: 30px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hire-btn:hover {
+  background-color: white;
+  color: rgb(124, 206, 1);
+}
+
+.aboutme {
+  width: 100%;
+  height: 600px;
+  padding: 30px 12%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.aboutme h2 {
+  margin-bottom: 30px;
+  color: white;
+  font-family: "Nullshock";
+  font-size: 26px;
+  text-align: center;
+}
+
+.aboutme p {
+  width: 100%;
+  text-align: justify;
+  text-justify: inter-character;
+  line-height: 30px;
+  color: white;
+  font-family: coco-r;
+  letter-spacing: 3px;
+  line-height: 30px;
+  font-weight: 800;
+  font-size: clamp(1rem, 0.9643rem + 0.1786vw, 1.25rem);
+}
+
+.anim {
+  text-align: center;
+  width: 100%;
+  height: 500px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-family: "Nullshock";
+  font-size: clamp(0.875rem, 0.8214rem + 0.2679vw, 1.25rem);
+  padding: 30px 12%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.animh1 span {
+  color: rgb(124, 206, 1)
+}
+
+.animh1 {
+  line-height: 30px;
+  text-wrap: wrap;
+}
+
+.skills {
+  width: 100%;
+  height: auto;
+  padding: 30px 12%;
+  background-color: black;
+  color: white;
+  font-family: "Nullshock";
+  display: grid;
+  place-content: center;
+  text-align: left;
+}
+
+.design-skills {
+  margin-top: 40px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.design-skills img {
+  width: 100px;
+  height: 100px;
+}
+
+.d-img {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+}
+
+.design-skills h2 {
+  margin-bottom: 30px;
+  font-family: coco-b;
+  font-size: clamp(0.9375rem, 0.8036rem + 0.6696vw, 1.875rem);
+}
+
+.dev-skills {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.dev-skills h2 {
+  margin-bottom: 30px;
+  font-family: coco-b;
+  font-size: clamp(0.9375rem, 0.8036rem + 0.6696vw, 1.875rem);
+}
+
+.dev-skills img {
+  width: 100px;
+  height: 100px;
+}
+
+.dev-img {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+}
+
+.dev-skills h2 {
+  margin-bottom: 30px;
+  font-family: coco-b;
+  font-size: clamp(0.9375rem, 0.8036rem + 0.6696vw, 1.875rem);
+}
+
+.scrolltab {
+  padding: 30px 12%;
+  height: 500px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-family: "Nullshock";
+  display: grid;
+  place-content: center;
+  font-size: clamp(1.125rem, 1.0179rem + 0.5357vw, 1.875rem);
+  line-height: 70px;
+}
+
+.table {
+  padding: 30px 12%;
+  height: 600px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-family: "Nullshock";
+  display: grid;
+  place-content: center;
+  text-align: justify;
+}
+
+.table h2 {
+  font-size: clamp(1.125rem, 1.0446rem + 0.4018vw, 1.6875rem);
+  margin-bottom: 20px;
+  hyphens: auto;
+}
+
+.table p {
+  font-family: coco-r;
+  letter-spacing: 3px;
+  line-height: 30px;
+  font-weight: 800;
+  font-size: clamp(0.8125rem, 0.75rem + 0.3125vw, 1.25rem);
+}
+
+.table p span {
+  color: rgb(124, 206, 1);
+}
+
+.quote {
+  width: 100%;
+  height: 400px;
+  background-color: black;
+  padding: 30px 12%;
+  color: white;
+  font-family: "Nullshock";
+  display: grid;
+  place-content: center;
+}
+
+.quote h2 {
+  font-size: clamp(1.5625rem, 1.4286rem + 0.6696vw, 2.5rem);
+  line-height: 60px;
+}
+
+.quote h2 span {
+  letter-spacing: 5.5px;
+  font-style: italic;
+  color: rgb(124, 206, 1);
+}
+
+#work {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  padding: 30px 0px;
+  color: white;
+  font-family: "Nullshock";
+  display: grid;
+  place-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+#fdevwork {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 120px;
+  margin-top: 60px;
+  flex-direction: column;
+}
+
+.project {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background-color: black;
+  border: 2px solid rgb(124, 206, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.flexfront a {
+  text-decoration: none;
+  color: white;
+}
+
+.project:hover {
+  background-color: rgb(112, 187, 1);
+  color: white;
+  transition: 0.5s;
+}
+
+.flexfront {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 120px;
+}
+
+#deswork {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 120px;
+  margin-top: 100px;
+  flex-direction: column;
+}
+
+#deswork h2 {
+  margin-top: 40px;
+  font-family: coco-b;
+}
+
+
+#fdevwork h2 {
+  margin-top: 40px;
+  font-family: coco-b;
+}
+
+
+#design-work div {
+  position: relative;
+  overflow: hidden;
+}
+
+#design-work div::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.726) 100%);
+  z-index: 2;
+}
+
+#design-work img {
+  width: 500px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  object-fit: cover;
+  object-position: center;
+}
+
+#design-work {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.behance {
+  position: relative;
+  z-index: 15;
+  width: 500px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.behance a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  height: 45px;
+  width: 120px;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.699);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  border: 2px solid rgb(124, 206, 1);
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 30px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.behance a:hover {
+  background-color: white;
+  color: rgb(97, 161, 0);
+}
+
+#contactme {
+  width: 100%;
+  height: 300px;
+  background-color: rgb(96, 158, 3);
+  color: black;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 12%;
+}
+
+#contactme h2 {
+  font-family: "Nullshock";
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+#contactme p {
+  font-family: coco-b;
+  font-size: clamp(0.8125rem, 0.75rem + 0.3125vw, 1.25rem);
+}
+
+.contact-icons {
+  font-size: clamp(1.5625rem, 1.4286rem + 0.6696vw, 2.5rem);
+  width: 100px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.contact-icons i:hover {
+  color: white;
+}
+
+.icon-link {
+  color: inherit; /* Or any other color */
+  text-decoration: none;
+}
